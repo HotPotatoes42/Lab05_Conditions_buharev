@@ -130,36 +130,117 @@
 //         break;
 // }
 
-for (int i = 0; i <= 12; i++)
-{
-Console.Write("\nВведите номер дня недели (1-7): ");
-    int MNumber = i;
+// for (int i = 0; i <= 12; i++)
+// {
+// Console.Write("\nВведите номер дня недели (1-7): ");
+//     int MNumber = i;
 
-    switch (MNumber)
-    {
-        case 1:
-        case 2:
-        case 12:
-            Console.WriteLine("Зима");
-            break;
-        case 3:
-        case 4:
-        case 5:
-            Console.WriteLine("Весна");
-            break;
-        case 6:
-        case 7:
-        case 8:
-            Console.WriteLine("Лето");
-            break;
-        case 9:
-        case 10:
-        case 11:
-            Console.WriteLine("Осень");
-            break;
-        default:
-            Console.WriteLine("Такого дня не существует.");
-            break;
-    }
+//     switch (MNumber)
+//     {
+//         case 1:
+//         case 2:
+//         case 12:
+//             Console.WriteLine("Зима");
+//             break;
+//         case 3:
+//         case 4:
+//         case 5:
+//             Console.WriteLine("Весна");
+//             break;
+//         case 6:
+//         case 7:
+//         case 8:
+//             Console.WriteLine("Лето");
+//             break;
+//         case 9:
+//         case 10:
+//         case 11:
+//             Console.WriteLine("Осень");
+//             break;
+//         default:
+//             Console.WriteLine("Такого дня не существует.");
+//             break;
+//     }
+// }
+
+// Random random = new Random();
+// int secret = random.Next(1, 101);
+
+// int attempts = 0;
+// bool guessed = false;
+
+// Console.WriteLine("Угадай число (1-100)");
+// Console.WriteLine("Я загадал число. Попробуй угадать!");
+
+// while (!guessed)
+// {
+//     Console.Write($"попытка {attempts + 1}. Твой вариант:");
+//     string input = Console.ReadLine();
+//     if (!int.TryParse(input, out int guess))
+//     {
+//         Console.WriteLine("!!! Введите целое число, а не текст");
+//         continue;
+//     }
+//     if (guess < 1 || guess > 100)
+//     {
+//         Console.WriteLine("!!! Число должно быть от 1 до 100!");
+//         continue;
+//     }
+//     attempts++;
+//     if (guess < secret)
+//     {
+//         // Подсказка «горячо/тепло/холодно» через switch
+//         int diff = secret - guess;
+//         string hint = GetHint(diff);
+//         Console.WriteLine($"↑ Больше! {hint}\n");
+//     }
+//     else if (guess > secret)
+//     {
+//         int diff = guess - secret;
+//         string hint = GetHint(diff);
+//         Console.WriteLine($"↓ Меньше! {hint}\n");
+//     }
+//     else
+//     {
+//         guessed = true; // угадал!
+//     }
+// }
+
+// string result = attempts <= 7
+//     ? $"Отличный результат! Всего {attempts} попыток."
+//     : $"Число найдено за {attempts} попыток. Можно лучше!";
+
+// Console.WriteLine($"🎉 Правильно! Загаданное число: {secret}");
+// Console.WriteLine($"{result}");
+
+
+// string GetHint(int difference)
+// {
+//     switch (difference)
+//     {
+//         case <= 3:
+//             return "� Горячо!";
+//         case <= 10:
+//             return "� Тепло.";
+//         case <= 25:
+//             return "� Прохладно.";
+//         default:
+//             return "❄ Холодно!";
+//     }
+// }
+
+
+string password = Console.ReadLine();
+string confirmPassword = Console.ReadLine();
+
+// Проверяем их на совпадение
+if (password == confirmPassword)
+{
+    Console.WriteLine("Пароль принят");
 }
+else
+{
+    Console.WriteLine("Пароль не принят");
+}
+
 
