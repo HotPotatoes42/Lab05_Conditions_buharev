@@ -1,4 +1,6 @@
-﻿// Console.Write("Введите число: ");
+﻿// using System.Diagnostics;
+// using System.Net.ServerSentEvents;
+// Console.Write("Введите число: ");
 // int number = int.Parse(Console.ReadLine());
 // if (number > 0) {
 //     Console.WriteLine("Число положительное.");
@@ -229,18 +231,66 @@
 //     }
 // }
 
+// // 1 задание
+// string password = Console.ReadLine();
+// string confirmPassword = Console.ReadLine();
 
-string password = Console.ReadLine();
-string confirmPassword = Console.ReadLine();
+// // Проверяем их на совпадение
+// if (password == confirmPassword)
+// {
+//     Console.WriteLine("Пароль принят");
+// }
+// else
+// {
+//     Console.WriteLine("Пароль не принят");
+// }
+// // 2
+// Console.WriteLine("Возраст");
+// int age = int.Parse(Console.ReadLine());
+// if (age >= 18)
+// {
+//     Console.WriteLine("Разрешён");
+// }
+// else
+// {
+//     Console.WriteLine("Запрещён");
+// }
+// // 3
+// Console.WriteLine("число a");
+// int a = int.Parse(Console.ReadLine());
+// Console.WriteLine("число b");
+// int b = int.Parse(Console.ReadLine());
+// Console.WriteLine("Знак");
+// int itog = 0;
+// string znak = Console.ReadLine();
 
-// Проверяем их на совпадение
-if (password == confirmPassword)
-{
-    Console.WriteLine("Пароль принят");
-}
-else
-{
-    Console.WriteLine("Пароль не принят");
-}
-
-
+// if (znak == "+")
+// {
+//     itog = a + b;
+// }
+// else if (znak == "-")
+// {
+//     itog = a - b;
+// }
+// else if (znak == "*")
+// {
+//     itog = a * b;
+// }
+// else if (znak == "/")
+// {
+//     itog = a / b;
+// }
+// Console.WriteLine(itog);
+// // 4
+// int count = 0;
+// for (int i = 0; i < 3; i++)
+// {
+//     int number = int.Parse(Console.ReadLine());
+//     if (number > 0)
+//     {
+//         count += 1;
+//     }
+// }
+// Console.WriteLine("Кол-во положительных чисел:");
+// Console.WriteLine(count);
+// // 5
