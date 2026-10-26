@@ -294,3 +294,41 @@
 // Console.WriteLine("Кол-во положительных чисел:");
 // Console.WriteLine(count);
 // // 5
+
+string drakon = "Кто не дышит, но живёт; хоть не нужно — много пьёт; и в жизни, и в смерти тело как лёд.";
+Console.WriteLine("1) Путь A: Войти в комнату с драконом");
+Console.WriteLine("2) Путь B: Пойти по тёмному коридору");
+int stroka = int.Parse(Console.ReadLine());
+if (stroka == 1) {
+    // Thread.Sleep(500);
+    Console.Write("Дракон говорит: ");
+    for (int i = 0; i < drakon.Length;i++)
+    {
+        Thread.Sleep(50);
+        Console.Write(drakon[i]);
+    }
+    Console.ReadLine();
+    string answer = Console.ReadLine();
+    if (answer == "рыба")
+    {
+        Console.WriteLine("Дракон говорит: Проходи");
+    }
+    else
+    {
+        Console.WriteLine("Дракон говорит: Тебе конец");
+    }
+}
+else if (stroka == 2) {
+    Console.WriteLine("На вашем пути 2 двери, в какую вы войдёте?");
+    Console.WriteLine("1) Дверь 1");
+    Console.WriteLine("2) Дверь 2");
+    int answer = int.Parse(Console.ReadLine());
+    if (answer == 1)
+    {
+        Console.WriteLine("За ней скрыты сокровища Dungeon Master’а.");
+    }
+    else if (answer == 2)
+    {
+        Console.WriteLine("За ней — ловушка с ядовитыми шипами.");
+    }
+}
