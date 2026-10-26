@@ -309,7 +309,7 @@ if (stroka == 1) {
     }
     Console.ReadLine();
     string answer = Console.ReadLine();
-    if (answer == "рыба")
+    if (answer == "рыба" || answer == "Рыба")
     {
         Console.WriteLine("Дракон говорит: Проходи");
     }
